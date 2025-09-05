@@ -10,13 +10,14 @@ import SwiftUI
 struct ResizableRectangle: View {
     @State var counter = 0
     @State private var size: CGFloat = 100
+    @State var color = Color.primary
     var body: some View {
         VStack{
             Rectangle()
                 .frame(width: CGFloat(counter)+100, height: CGFloat(counter)+100)
                 .cornerRadius(12)
                 .animation(.spring(), value: counter)
-                .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                .foregroundColor(color)
                 .padding(.top,100)
             Spacer()
             
@@ -39,6 +40,10 @@ struct ResizableRectangle: View {
                     Image(systemName: "minus.square.fill")
                 }
             }
+            
+            ColorPicker("Pick a color", selection: $color)
+                .padding()
+            
         }
     }
 }
