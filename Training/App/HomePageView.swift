@@ -1,15 +1,43 @@
-//
-//  HomePageView.swift
-//  Training
-//
-//  Created by Hadeel on 07/09/2025.
-//
 
 import SwiftUI
 
 struct HomePageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            NavigationStack{
+                List{
+                    Section{
+                        NavigationLink{
+                            Colorful()
+                                .navigationTitle("Colorful")
+                        }label: {
+                            CostumizedNavList(emoji: "🦍", label: "Colorful",color: .pink)
+                        }
+                    }
+                    Section {
+                        NavigationLink{
+                            Bindings()
+                                .navigationTitle("Bindings")
+                        }label: {
+                            CostumizedNavList(emoji: "🦑", label: "Bindings",color: .mint)
+                        }
+                        NavigationLink{
+                            ResizableCircle()
+                                .navigationTitle("Resizable Circle")
+                        }label: {
+                            CostumizedNavList(emoji: "🦚", label: "Resizable Circle",color: .blue)
+                        }
+                        NavigationLink{
+                            ResizableRectangle()
+                                .navigationTitle("Resizable Rectangle")
+                        }label: {
+                            CostumizedNavList(emoji: "😵‍", label: "Resizable Rectangle",color: .yellow)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -1,17 +1,15 @@
-//
-//  TrainingApp.swift
-//  Training
-//
-//  Created by Hadeel on 01/09/2025.
-//
 
 import SwiftUI
+//import Guide
 
 @main
 struct TrainingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                ContentView()
+            }.navigationTitle("my title")
+            
         }
     }
 }

@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct CostumizedNavList: View {
+    var emoji : String
+    var label : String
+    var color : Color
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Text(emoji)
+            Text(label)
+            Spacer()
+            Circle()
+                .frame(width: 10)
+                .foregroundStyle(color)
+        }
     }
 }
 
 #Preview {
-    CostumizedNavList()
+    CostumizedNavList(emoji: "🍎", label: "Fruits",color: .black)
 }
+
+

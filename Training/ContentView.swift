@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView : View {
     var body : some View{
         VStack{
-           Colorful()
+           HomePageView()
         }
     }
 }
@@ -20,7 +20,5 @@ struct ContentView_Previews : PreviewProvider {
             ContentView()
         }
     }
-    
-    
 }
 

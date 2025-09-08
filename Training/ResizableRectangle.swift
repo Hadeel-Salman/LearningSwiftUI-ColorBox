@@ -44,6 +44,7 @@ struct ResizableRectangle: View {
             ColorPicker("Pick a color", selection: $color)
                 .padding()
             
+            
         }
     }
 }
