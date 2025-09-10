@@ -1,18 +1,20 @@
-//
-//  animalsCollection.swift
-//  Training
-//
-//  Created by Hadeel on 09/09/2025.
-//
+
 
 import SwiftUI
 
-struct animalsCollection: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+class animalsCollection: ObservableObject {
+    @Published var animalList : [animals] = [
+        animals(name: "Monkey", emoji: "🐒", color: .brown),
+    ]
 }
 
-#Preview {
-    animalsCollection()
+
+struct animals : Identifiable {
+    var name : String
+    var emoji : String
+    var color : Color
+    
+    var id = UUID()
+    
 }
+

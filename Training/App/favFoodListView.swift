@@ -1,18 +1,24 @@
-//
-//  favFoodListView.swift
-//  Training
-//
-//  Created by Hadeel on 09/09/2025.
-//
 
 import SwiftUI
 
 struct favFoodListView: View {
+    @StateObject var foodies : favoriteFoodClass
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            List{
+                ForEach(foodies.foodArr){ FavFood in
+                    HStack{
+                        Text(FavFood.name)
+                        Spacer()
+                        Text(FavFood.emoji)
+                    }
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    favFoodListView()
+    favFoodListView(foodies: favoriteFoodClass())
 }

@@ -7,6 +7,7 @@ struct HomePageView: View {
             
             NavigationStack{
                 List{
+                    
                     Section{
                         NavigationLink{
                             Colorful()
@@ -14,8 +15,21 @@ struct HomePageView: View {
                         }label: {
                             CostumizedNavList(emoji: "🦍", label: "Colorful",color: .pink)
                         }
+                        NavigationLink{
+                            favFoodListView(foodies: favoriteFoodClass())
+                                .navigationTitle("fav Food List")
+                        }label: {
+                            CostumizedNavList(emoji: "😋", label: "for foodies", color: .green)
+                        }
+                        NavigationLink{
+                            animalsCollectionView()
+                                .navigationTitle("Animals Collection")
+                        }label: {
+                            CostumizedNavList(emoji: "🐾", label: "Animals Collection", color: .brown)
+                        }
                     }
-                    Section {
+                    
+                    Section{
                         NavigationLink{
                             Bindings()
                                 .navigationTitle("Bindings")
