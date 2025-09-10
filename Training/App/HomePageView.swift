@@ -16,7 +16,7 @@ struct HomePageView: View {
                             CostumizedNavList(emoji: "🦍", label: "Colorful",color: .pink)
                         }
                         NavigationLink{
-                            favFoodListView(foodies: favoriteFoodClass())
+                            favFoodListView()
                                 .navigationTitle("fav Food List")
                         }label: {
                             CostumizedNavList(emoji: "😋", label: "for foodies", color: .green)

@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct favFoodListView: View {
-    @StateObject var foodies : favoriteFoodClass
+    @EnvironmentObject var foodies : favoriteFoodClass
     
     var body: some View {
         VStack{
@@ -20,5 +20,5 @@ struct favFoodListView: View {
 }
 
 #Preview {
-    favFoodListView(foodies: favoriteFoodClass())
+    favFoodListView()
 }
