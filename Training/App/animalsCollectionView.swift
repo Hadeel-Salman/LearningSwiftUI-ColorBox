@@ -59,7 +59,3 @@ struct animalsCollectionView: View {
         }
     }
 }
-
-#Preview {
-    animalsCollectionView()
-}

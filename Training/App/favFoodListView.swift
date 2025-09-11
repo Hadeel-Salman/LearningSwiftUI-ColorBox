@@ -7,11 +7,11 @@ struct favFoodListView: View {
     var body: some View {
         VStack{
             List{
-                ForEach(foodies.foodArr){ FavFood in
+                ForEach(foodies.foodArr){ food in
                     HStack{
-                        Text(FavFood.name)
+                        Text(food.name)
                         Spacer()
-                        Text(FavFood.emoji)
+                        Text(food.emoji)
                     }
                 }
             }

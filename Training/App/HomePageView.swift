@@ -18,12 +18,14 @@ struct HomePageView: View {
                         NavigationLink{
                             favFoodListView()
                                 .navigationTitle("fav Food List")
+                                .environmentObject(favoriteFoodClass())
                         }label: {
                             CostumizedNavList(emoji: "😋", label: "for foodies", color: .green)
                         }
                         NavigationLink{
                             animalsCollectionView()
                                 .navigationTitle("Animals Collection")
+                                .environmentObject(animalsCollection())
                         }label: {
                             CostumizedNavList(emoji: "🐾", label: "Animals Collection", color: .brown)
                         }

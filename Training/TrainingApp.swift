@@ -12,8 +12,8 @@ struct TrainingApp: App {
         WindowGroup {
             NavigationStack{
                 ContentView()
+                    .navigationTitle("my title")
             }
-            .navigationTitle("my title")
             .environmentObject(foodies)
             .environmentObject(Animaldata)
             
