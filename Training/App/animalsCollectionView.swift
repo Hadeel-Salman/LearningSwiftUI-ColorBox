@@ -55,7 +55,6 @@ struct animalsCollectionView: View {
                         .foregroundStyle(Color(animals.color))
                 }
             }
-            
         }
     }
 }

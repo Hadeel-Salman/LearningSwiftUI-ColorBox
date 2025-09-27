@@ -1,4 +1,4 @@
-
+import SamplePackage
 import SwiftUI
 
 struct ContentView : View {

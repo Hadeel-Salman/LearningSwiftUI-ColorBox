@@ -50,6 +50,14 @@ struct HomePageView: View {
                         }label: {
                             CostumizedNavList(emoji: "😵‍", label: "Resizable Rectangle",color: .yellow)
                         }
+                        NavigationLink{
+                            CardView()
+                                .navigationTitle("Card")
+                        }label: {
+                            CostumizedNavList(emoji: "😵‍", label: "Names",color: .blue)
+                        }
+
+                        
                     }
                 }
             }

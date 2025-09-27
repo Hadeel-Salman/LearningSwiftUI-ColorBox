@@ -14,6 +14,10 @@ struct favFoodListView: View {
                         Text(food.emoji)
                     }
                 }
+                    .onDelete { indexSet in
+                        foodies.foodArr.remove(atOffsets: indexSet)
+                    
+                }
             }
         }
     }
@@ -21,4 +25,5 @@ struct favFoodListView: View {
 
 #Preview {
     favFoodListView()
+        .environmentObject(favoriteFoodClass())
 }

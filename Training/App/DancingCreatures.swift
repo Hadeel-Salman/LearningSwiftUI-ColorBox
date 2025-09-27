@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct DancingCreatures: View {
+    
+    //@EnvironmentObject var data : animalsCollection
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    DancingCreatures()
-}
+        VStack{
+            
+        }
+        //
+        //        ZStack {
+        //                    ForEach(data.animalList) { animal in
+        //                        Text(animal.emoji)
+        //                            .resizableFont()
+        //                            .offset(animal.offset)
+        //                            .rotationEffect(animal.rotation)
+        //                            .animation(.spring(response: 0.5, dampingFraction: 0.5), value: animal.rotation)
+        //                            .animation(.default.delay(data.indexFor(animal)/10), value: animal.offset)
+        //                    }
+        //                }
+        //                .onTapGesture {
+        //                    data.synchronizeOffsets()
+        //                }
+        //            }
+        //        }
+        
+    }}
