@@ -25,6 +25,7 @@
 		5FE1E59B2E81C4D000371DDE /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5FE1E59A2E81C4D000371DDE /* SamplePackage */; };
 		5FED35032E6F87A300B2A5B9 /* FavFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED35022E6F87A300B2A5B9 /* FavFood.swift */; };
 		5FED35052E6F896600B2A5B9 /* favFoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FED35042E6F896600B2A5B9 /* favFoodListView.swift */; };
+		5FFE9B0A2E89833A0042F80B /* ExpandableButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE9B092E89833A0042F80B /* ExpandableButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		5FDE05312E6B541400D2A39F /* Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindings.swift; sourceTree = "<group>"; };
 		5FED35022E6F87A300B2A5B9 /* FavFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavFood.swift; sourceTree = "<group>"; };
 		5FED35042E6F896600B2A5B9 /* favFoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favFoodListView.swift; sourceTree = "<group>"; };
+		5FFE9B092E89833A0042F80B /* ExpandableButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				5F9A00222E78A61900D83E36 /* emojiPickerView.swift */,
 				5F9A00242E78A89E00D83E36 /* DancingCreatures.swift */,
 				5F1E5A572E86DA850022F0E2 /* CardView.swift */,
+				5FFE9B092E89833A0042F80B /* ExpandableButtonView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -163,7 +166,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					5F6C02CD2E6614B300AC3EF9 = {
 						CreatedOnToolsVersion = 15.2;
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFE9B0A2E89833A0042F80B /* ExpandableButtonView.swift in Sources */,
 				5FDE05322E6B541400D2A39F /* Bindings.swift in Sources */,
 				5F6C02D42E6614B300AC3EF9 /* ContentView.swift in Sources */,
 				5F17A2D12E707873009AE25C /* animalsCollectionView.swift in Sources */,
@@ -264,6 +268,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6VNM9RN6Q3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -287,6 +292,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -327,6 +333,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6VNM9RN6Q3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -343,6 +350,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -356,7 +364,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Training/Preview Content\"";
-				DEVELOPMENT_TEAM = 6VNM9RN6Q3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -385,7 +392,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Training/Preview Content\"";
-				DEVELOPMENT_TEAM = 6VNM9RN6Q3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
